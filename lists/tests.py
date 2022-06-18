@@ -143,3 +143,6 @@ class NewListTest(TestCase):
         correct_list = List.objects.create()
         response = self.client.get(f'/lists/{correct_list.id}/')
         self.assertEqual(response.context['list'], correct_list)
+
+
+
