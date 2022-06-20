@@ -3,7 +3,7 @@ Description=Gunicorn server for 47.110.46.145
 
 [Service]
 Restart=on-failure
-User=yang-peilin
+User=root
 WorkingDirectory=/root/sites/47.110.46.145/source
 ExecStart=/root/sites/47.110.46.145/virtualenv/bin/gunicorn \ --bind unix:/tmp/47.110.46.145.socket suplerlists.wsgi:application
 
